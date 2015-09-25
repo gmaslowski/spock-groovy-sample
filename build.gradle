@@ -17,7 +17,7 @@ dependencies {
     def mockitoVersion = '1.9.5'
     def restAssuredVersion = '2.3.3'
 
-    def spockVersion = '0.7-groovy-2.0'
+    def spockVersion = '1.0-groovy-2.3'
     def httpBuilderVersion = '0.7.1'
 
     def springVersion = '4.1.4.RELEASE'
