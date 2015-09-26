@@ -12,12 +12,12 @@ repositories {
 dependencies {
     def guavaVersion = '17.0'
     def JUnitParamsVersion = '0.9.0'
-    def junitVersion = '4.8.2'
+    def junitVersion = '4.12'
     def festVersion = '1.4'
     def mockitoVersion = '1.9.5'
     def restAssuredVersion = '2.3.3'
 
-    def spockVersion = '0.7-groovy-2.0'
+    def spockVersion = '1.0-groovy-2.3'
     def httpBuilderVersion = '0.7.1'
 
     def springVersion = '4.1.4.RELEASE'
@@ -26,7 +26,7 @@ dependencies {
     compile group: 'pl.pragmatists', name: 'JUnitParams', version: JUnitParamsVersion
     compile group: 'junit', name: 'junit', version: junitVersion
     compile group: 'org.easytesting', name: 'fest-assert', version: festVersion
-    compile group: 'org.mockito', name: 'mockito-all', version: mockitoVersion
+    compile group: 'org.mockito', name: 'mockito-core', version: mockitoVersion
     compile group: 'com.jayway.restassured', name: 'rest-assured', version: restAssuredVersion
 
     compile group: 'org.spockframework', name: 'spock-core', version: spockVersion
