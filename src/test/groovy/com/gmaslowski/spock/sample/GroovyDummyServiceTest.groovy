@@ -46,16 +46,4 @@ class GroovyDummyServiceTest extends Specification {
         then:
         2 * dummyRepository.getDummyById(dummyId)
     }
-
-    def "should not deactivate dummy with negative id"() {
-        setup:
-        def negativeId = -1
-
-        when:
-        dummyService.dummyLogic(negativeId)
-
-        then:
-        def thrownException = thrown(DummyNotFoundException)
-        thrownException.message == "Could not find dummy with id $negativeId"
-    }
 }
